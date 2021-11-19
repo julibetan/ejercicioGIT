@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inicio = ["unacadena",3,9,1,10,500,1,10,"a",true];
+        var numeros2= new Array();
+        var numeros= new Array();
+
+        function limpiarArray(numeros){
+
+            for (var i = 0; i <= numeros.length; i++) {
+                if(typeof numeros[i] == "number")
+                                {
+                                    numeros2.push(numeros[i]);
+                                    console.log(numeros2); 
+                            }            
+            }
+            return numeros2;
+        }
+
+        var a=limpiarArray(inicio);
+        console.log("Array con numeros: "+a);
+
+        function ordenamiento(numeros){
+
+        for (var i = 0; i < numeros.length; i++) {
+            for (var j = 0; j < (numeros.length - i - 1); j++) {                                       
+                if(numeros[j] >= numeros[j+1]){
+                    let temp = numeros[j];
+                    numeros[j] = numeros[j+1];
+                    numeros[j+1] = temp;
+                }  
+            }  
+        }  
+            return numeros;
+        }
+
+        var b=ordenamiento(a);
+        console.log("Array ordenado: "+b);
+
+    </script>
+</body>
+</html>
+
+
