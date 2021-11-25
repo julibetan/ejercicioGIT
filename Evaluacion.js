@@ -147,15 +147,15 @@ class Grupo{
 }
 
 
-const estudiantes=new Estudiante([{nombre:"pedro1",edad:"21"},{nombre:"pedro1",edad:"21"},{nombre:"pedro1",edad:"21"},{nombre:"pedro1",edad:"21"},{nombre:"pedro1",edad:"21"},{nombre:"pedro1",edad:"21"}]);
-const profe = new Profesor('Juan', "23");
-const grupo = new Grupo('jprofe', estudiantes);
+const estudiantes=new Estudiante("Juan", "23");
+const profe = new Profesor("Juan", "23");
+const grupo = new Grupo("jprofe", estudiantes);
 
-const grupo1 = new Grupo('jprofe', ["juan","pedro","sara"]);
+const grupo1 = new Grupo("jprofe", ["juan","pedro","sara"]);
 
 
 console.log(estudiantes.obtDetalles);
-console.log(estud);
+console.log(estudiantes);
 //console.log(estud.calificar());
 
 //Bonus
