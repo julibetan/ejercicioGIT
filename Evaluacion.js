@@ -147,7 +147,7 @@ class Grupo{
 }
 
 
-const estudiantes=new Estudiante("Juan", "23");
+const estudiantes=new Estudiante(["juan","pedro","sara","pedru","saru","fede"], [2,2,22,2,2,22]);
 const profe = new Profesor("Juan", "23");
 const grupo = new Grupo("jprofe", estudiantes);
 
